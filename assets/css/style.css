@@ -1,0 +1,118 @@
+body {
+	margin: 0px;
+	background-color: #FFF1CC;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#home {
+    text-align: center;
+    position: relative;
+    top: 22%
+}
+
+#title {
+	font-size: 40px;
+	text-align: center;
+	padding: 30px;
+}
+
+#icon-container {
+	text-align: center;
+	padding: 10px;
+}
+
+.intro {
+    height: 150px;
+    animation-name: welcome;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.icon {
+	cursor: pointer;
+	height: 100px;
+	margin: 10px;
+}
+
+.icon:hover {
+    animation-name: wiggle;
+    animation-duration: 0.45s;
+    animation-iteration-count: 1;
+}
+
+.food {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+
+.food-title {
+    top: 130px;
+    position: relative;
+    font-size: 40px;
+}
+
+.food-body {
+    top: 200px;
+    position: relative;
+    font-size: 20px;
+}
+
+.food-pic {
+	cursor: pointer;
+    top: 150px;
+    position: relative;
+	height: 200px;
+	margin: 10px;
+}
+
+.food-pic:hover {
+    animation-name: wiggle;
+    animation-duration: 0.45s;
+    animation-iteration-count: 1;
+}
+
+.back:hover {
+    cursor: pointer;
+}
+
+@keyframes wiggle {
+    25% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes welcome {
+    0% {
+        transform: translateY(0px) scale(1, 1);
+    }
+    10% {
+        transform: translateY(0px) scale(1.2, 0.8);
+    }
+    40% {
+        transform: translateY(-90px) scale(0.8, 1.2);
+    }
+    50% {
+        transform: translateY(0px) scale(1.2, 0.8);
+    }
+    60% {
+        transform: translateY(-10px) scale(1, 1);
+    }
+    70% {
+        transform: translateY(0px) scale(1, 1);
+    }
+    100% {
+        transform: translateY(0px) scale(1, 1);
+    }
+}
